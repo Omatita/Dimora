@@ -1,0 +1,10 @@
+opencv-python
+paho-mqtt
+ultralytics
+SpeechRecognition
+PyAudio
+gTTS
+requests
+psutil
+spotipy
+piper-tts

@@ -1,0 +1,43 @@
+{
+  "mqtt": {
+    "broker": "localhost",
+    "port": 1883
+  },
+  "global_services":[
+    "orchestrator",
+    "timer",
+    "listener",
+    "speaker",
+    "reminders",
+    "spotify_player"
+  ],
+  "rooms": {
+    "cucina": {
+      "camera_source": 0,
+      "modules": ["camera", "light_control"],
+      "devices": [
+        {
+          "name": "luce_sottopensile",
+          "type": "light",
+          "control_topic": "humora/devices/luce_sottopensile/set"
+        }
+      ]
+    },
+    "salotto": {
+      "camera_source": "rtsp://user:pass@192.168.1.50/stream",
+      "modules": ["camera", "light_control"],
+      "devices": [
+        {
+          "name": "luce_soffitto_salotto",
+          "type": "light",
+          "control_topic": "humora/devices/luce_soffitto_salotto/set"
+        },
+        {
+          "name": "lampada_piantana_salotto",
+          "type": "light",
+          "control_topic": "humora/devices/lampada_piantana_salotto/set"
+        }
+      ]
+    }
+  }
+}

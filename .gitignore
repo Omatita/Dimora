@@ -1,0 +1,5 @@
+./venv
+./yolov8n.pt
+./modules/__pycache__
+./modules/config.py
+.spotify_cache

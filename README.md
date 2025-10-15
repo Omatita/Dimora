@@ -1,0 +1,2 @@
+# Dimora
+local home assistant
